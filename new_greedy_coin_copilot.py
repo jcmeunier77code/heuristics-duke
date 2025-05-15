@@ -8,7 +8,7 @@ def greedy_coin(change):
 
     print(f"Your change for {change} is:")
     amount_cents = round(change * 100)  # Convert to cents
-    # Initialize the number of coins to 0
+    # Initialize the number of coins to 0.25 and 0.10
     coins = [0.25, 0.10]
     coin_lookup = {0.25: "quarters", 0.10: "dimes"}
     coin_dict = {}
@@ -33,8 +33,8 @@ def greedy_coin2(change):
     print(f"Your change for {change} is:")
     amount_cents = round(change * 100)  # Convert to cents
     # Initialize the number of coins to 0
-    coins = 0
-    coin_lookup = {0.25: "quarters", 0.10: "dimes", 0.05: "nickels", 0.01: "pennies"}
+    coins = [0.10, 0.05, 0.01]
+    coin_lookup = {0.10: "dimes", 0.05: "nickels", 0.01: "pennies"}
     coin_dict = {}
     for coin in coins:
         coin_dict[coin] = 0
